@@ -1,0 +1,14 @@
+[
+  {
+    "email": "martin.dumas@example.com",
+    "password": "demo123",
+    "name": "Martin Dumas",
+    "id": "usr_001"
+  },
+  {
+    "email": "test@test.com",
+    "password": "$2b$10$fm8Hv3wHSjXFukcJ0P9ZuuDnpk8Wo4cKMow764M9WJcXuP00Hp4AC",
+    "name": "test",
+    "id": "usr_1762895497372"
+  }
+]
