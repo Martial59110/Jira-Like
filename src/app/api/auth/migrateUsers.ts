@@ -1,7 +1,6 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
 import bcrypt from "bcryptjs";
-import { fakeUser } from "../db/data";
 
 type OldUserData = {
   email: string;
