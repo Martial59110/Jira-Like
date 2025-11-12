@@ -21,7 +21,7 @@ export async function PATCH(
     }
 
     return Response.json(fakeIssues[issueIndex]);
-  } catch (error) {
+  } catch {
     return Response.json(
       { error: "Erreur lors de la mise à jour" },
       { status: 500 }
