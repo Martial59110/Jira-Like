@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     fakeIssues.push(newIssue);
 
     return Response.json(newIssue, { status: 201 });
-  } catch (error) {
+  } catch {
     return Response.json(
       { error: "Erreur lors de la création de l'issue" },
       { status: 500 }
