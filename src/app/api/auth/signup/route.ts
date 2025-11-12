@@ -7,16 +7,6 @@ type SignupRequest = {
   confirmPassword: string;
 };
 
-type SignupResponse = {
-  success: boolean;
-  user?: {
-    id: string;
-    name: string;
-    email: string;
-  };
-  error?: string;
-};
-
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as SignupRequest;
@@ -71,7 +61,7 @@ export async function POST(request: Request) {
         email: body.email,
       },
     });
-  } catch (error) {
+  } catch {
     return Response.json(
       { success: false, error: "Erreur lors de la création du compte" },
       { status: 500 }
